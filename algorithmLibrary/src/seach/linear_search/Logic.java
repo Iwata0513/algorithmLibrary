@@ -1,8 +1,8 @@
-package linearSearch;
+package seach.linear_search;
 
 import java.util.Scanner;
 
-public class LinearSearch {
+public class Logic {
 	/*
 	 線形探索法: その言葉通り単純に探索の対象とするデータ群と探索したいデータである探索値を
 	 先頭から比較していき、目的のデータが見つかるまで探索を続ける方法。

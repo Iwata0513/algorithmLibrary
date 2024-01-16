@@ -1,4 +1,4 @@
-package binarySearch;
+package seach.binary_search;
 
 import java.util.Scanner;
 
@@ -19,7 +19,7 @@ public class SampleFunction {
 		scan.close();
 
 		System.out.println(target + "を二分探索法で検索します");
-		int ans = BinarySearch.logic(target, SARCH_TARGET);
+		int ans = Logic.logic(target, SARCH_TARGET);
 		
 		if(ans >=0) System.out.println(ans + "番目に発見しました");
 		if(ans == -1) System.out.println(target+"は見つかりませんでした");

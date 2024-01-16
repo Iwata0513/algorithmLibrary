@@ -1,6 +1,6 @@
-package binarySearch;
+package seach.binary_search;
 
-public class BinarySearch {
+public class Logic {
 
 	public static int logic(int target, int[] targetArray) {
 		//		確認する配列の添字を計算
