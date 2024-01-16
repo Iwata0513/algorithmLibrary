@@ -1,6 +1,11 @@
 package seach;
 
 public class Binary_search {
+	/*
+	  二分探索法:ソート済みの配列に入ったデータ（同一の値はないものとする）に対する検索を行うにあたって、
+	  中央の値を見て、検索したい値との大小関係を用いて、検索したい値が中央の値の
+	  右(大きい)か、左(小さい)かを判断して、片側には存在しないことを確かめながら検索していく。
+	 */
 
 	public static int logic(int target, int[] targetArray) {
 		//		確認する配列の添字を計算
