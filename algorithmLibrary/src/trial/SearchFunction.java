@@ -1,8 +1,10 @@
-package seach.binary_search;
+package trial;
 
 import java.util.Scanner;
 
-public class SampleFunction {
+import seach.Binary_search;
+
+public class SearchFunction {
 	/*
 	  二分探索法:ソート済みの配列に入ったデータ（同一の値はないものとする）に対する検索を行うにあたって、
 	  中央の値を見て、検索したい値との大小関係を用いて、検索したい値が中央の値の
@@ -19,7 +21,7 @@ public class SampleFunction {
 		scan.close();
 
 		System.out.println(target + "を二分探索法で検索します");
-		int ans = Logic.logic(target, SARCH_TARGET);
+		int ans = Binary_search.logic(target, SARCH_TARGET);
 		
 		if(ans >=0) System.out.println(ans + "番目に発見しました");
 		if(ans == -1) System.out.println(target+"は見つかりませんでした");
