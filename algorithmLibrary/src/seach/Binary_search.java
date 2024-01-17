@@ -7,25 +7,25 @@ public class Binary_search {
 	  右(大きい)か、左(小さい)かを判断して、片側には存在しないことを確かめながら検索していく。
 	 */
 
-	public static int logic(int target, int[] targetArray) {
+	public static int logic(int target, int[] searchArray) {
 		//		確認する配列の添字を計算
 		int arrayFirstNum = 0;
-		int arrayLastNum = targetArray.length - 1;
+		int arrayLastNum = searchArray.length - 1;
 		int arrayMidNum = (arrayLastNum - arrayFirstNum) / 2;
 		int ans = -1;
 
 		while (arrayLastNum >= arrayFirstNum) {
 
 			//見つかった時は何番目かを返す
-			if (target == targetArray[arrayMidNum]) {
+			if (target == searchArray[arrayMidNum]) {
 				ans = arrayMidNum + 1;
 				break;
 			}
 
 			//探している数字と合わなかった時
-			if (targetArray[arrayMidNum] < target) {
+			if (searchArray[arrayMidNum] < target) {
 				arrayFirstNum = arrayMidNum + 1;
-			} else if (targetArray[arrayMidNum] > target) {
+			} else if (searchArray[arrayMidNum] > target) {
 				arrayLastNum = arrayMidNum - 1;
 			}
 
